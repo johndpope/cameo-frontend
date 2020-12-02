@@ -1,9 +1,10 @@
-import Document, { Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/styles";
 import { ServerStyleSheet } from "styled-components";
-import { theme } from "services/shared/MaterialUI";
 import { TypographyStyle, GoogleFont } from "react-typography";
-import { typography } from "services/browser/Typography";
+
+import { theme } from "../services/shared/MaterialUI";
+import { typography } from "../services/browser/Typography";
 
 interface Props {
   styles: any;
@@ -46,7 +47,7 @@ class CustomDocument extends Document<Props> {
   render() {
     const { styles } = this.props;
     return (
-      <html>
+      <Html>
         <Head>
           <meta charSet="utf-8" />
           <meta
@@ -63,7 +64,7 @@ class CustomDocument extends Document<Props> {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

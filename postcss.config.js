@@ -1,9 +1,21 @@
-const tailwindcss = require("tailwindcss");
-
 module.exports = {
 	plugins: [
-		require("postcss-easy-import"),
-		tailwindcss("./tailwind.config.js"),
-		require("autoprefixer")
-	]
+		"tailwindcss",
+		[
+			"@fullhuman/postcss-purgecss",
+			// process.env.NODE_ENV === "production"
+			//   ? {
+			//       content: [
+			//         "./pages/**/*.{js,jsx,ts,tsx}",
+			//         "./components/**/*.{js,jsx,ts,tsx}",
+			//         "./layouts/**/*.{js,jsx,ts,tsx}",
+			//         "./modals/**/*.{js,jsx,ts,tsx}",
+			//       ],            
+			//       defaultExtractor: (content) =>
+			//         content.match(/[\w-/:]+(?<!:)/g) || [],
+			//     }
+			//   : false,
+			false
+		],
+	],
 };

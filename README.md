@@ -9,3 +9,6 @@
   </a>
 </p>
 
+### tailwind2.0.1 setup guide
+
+https://tailwindcss.com/docs/installation#post-css-7-compatibility-build

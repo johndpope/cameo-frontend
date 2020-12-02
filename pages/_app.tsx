@@ -2,11 +2,12 @@ import App from "next/app";
 import Head from "next/head";
 import { ThemeProvider, StylesProvider } from "@material-ui/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { theme } from "services/shared/MaterialUI";
-import "services/browser/Tailwind.css";
+import { theme } from "../services/shared/MaterialUI";
+
+import '../styles/tailwind.css';
 
 class CustomApp extends App {
-    
+
 	componentDidMount() {
 		const jssStyles = document.querySelector("#jss-server-side");
 		if (jssStyles) {
