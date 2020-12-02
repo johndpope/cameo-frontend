@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchIcon from '@material-ui/icons/Search'
-import {Container, Text} from './Styled'
+import { Container, Text } from './Styled'
 
 
 interface IProps {
@@ -27,5 +27,4 @@ const SearchAppBar = ({ onChange }: IProps) => {
   );
 }
 
-export default SearchAppBar
 export { SearchAppBar }

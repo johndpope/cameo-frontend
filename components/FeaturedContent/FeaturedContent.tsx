@@ -1,6 +1,8 @@
 import React from 'react'
-import { SearchAppBar, Chip, Card, Header } from ".."
-import { Footer } from '../Footer/Footer'
+import { SearchAppBar } from "../SearchBar/SearchBar"
+import { Card } from "../../components/Card/Card";
+import { Chip } from "../../components/Chip/Chip";
+import { Header } from "../../components/Header/Header";
 import { Container } from './Styled'
 
 interface ITag {
@@ -28,7 +30,7 @@ export const FeaturedContent = ({ tags, list, onTagClick }: IProps) => {
   return (
     <Container>
       <Header />
-      <SearchAppBar onChange={() => {}} />
+      <SearchAppBar onChange={() => { }} />
 
       <div className="content">
         <div className="nav">
